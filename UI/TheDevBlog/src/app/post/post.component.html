@@ -1,0 +1,16 @@
+<div class="container" *ngIf="post">
+  <div class="card" style="max-width:500px; margin: 0 auto;">
+      <img [src]="post.featuredImageUrl" class="card-img-top" alt="Card image cap">
+      <div class="card-body">
+        <h1 class="card-title">{{post.title}}</h1>
+        <article class="card-text" [innerHTML]="post.content">
+          {{post.content}}
+        </article>
+        <br>
+        <p>Author: {{post.author}}</p>
+        <p>Publish Date: {{post.publishDate}}</p>
+        <p>Updated Date: {{post.updatedDate}}</p>
+      </div>
+      <a class="btn btn-primary" [routerLink]="['']" href="">Back to Main Page</a>
+    </div>
+</div>
