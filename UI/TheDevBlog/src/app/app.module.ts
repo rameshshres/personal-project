@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { AdminAddPostComponent } from './admin/admin-add-post/admin-add-post.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './post/post.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import { PostComponent } from './post/post.component';
     AdminViewComponent,
     AdminAddPostComponent,
     PostsComponent,
-    PostComponent
+    PostComponent,
+    NavBarComponent,
+    MyPortfolioComponent
   ],
   imports: [
     BrowserModule,
